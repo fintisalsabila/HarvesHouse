@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HarvesHouse</title>
+    <!-- boxicons-2.1.2 -->
+    <link rel="stylesheet" href="boxicons-2.1.2/css/boxicons.css">
+    <!-- link shortcut -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- link boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                HarvesHouse <i class='bx bxs-home-alt-2'></i>
+            </a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt-2'></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link">
+                            <i class='bx bx-building-house'></i>
+                            <span>Residences</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#value" class="nav__link">
+                            <i class='bx bx-award'></i>
+                            <span>Value</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-phone'></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme Change Button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+            <a href="#" class="button nav__button">
+                Subscribe
+            </a>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main" id="main">
+        <!-- Home -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Temukan <br> Properti yang Cocok <br> untuk Anda
+                    </h1>
+                    <p class="home__description">
+                        Temukan berbagai properti yang sesuai dengan Anda dengan mudah,
+                        lupakan semua kesulitan dalam mencari tempat tinggal untuk Anda
+                    </p>
+                    <form action="" class="home__search">
+                        <i class='bx bxs-map'></i>
+                        <input type="search" placeholder="Cari berdasarkan lokasi..." class="home__search-input">
+                        <button class="button">Cari</button>
+                    </form>
+                    <div class="home__value">
+                        <div>
+                            <h1 class="home__value-number">
+                                9K <span>+</span>
+                            </h1>
+                            <span class="home__value-description">
+                                Produk <br> Premium
+                            </span>
+                        </div>
+                        <div>
+                            <h1 class="home__value-number">
+                                2K <span>+</span>
+                            </h1>
+                            <span class="home__value-description">
+                                Pelanggan <br> Bahagia
+                            </span>
+                        </div>
+                        <div>
+                            <h1 class="home__value-number">
+                                28K <span>+</span>
+                            </h1>
+                            <span class="home__value-description">
+                                Pemenang <br> Penghargaan
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__orbe"></div>
+
+                    <div class="home__img">
+                        <img src="img/home.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Logos -->
+        <section class="logos section">
+            <div class="logos__container container grid">
+                <Marquee direction="right" speed={100} delay={5} onmouseover="this.stop();" onmouseout="this.start();">
+                    <img src="img/logo1.png" alt="" class="logos__img">
+                    <img src="img/logo2.png" alt="" class="logos__img">
+                    <img src="img/logo3.png" alt="" class="logos__img">
+                    <img src="img/logo4.png" alt="" class="logos__img">
+                </Marquee>
+            </div>
+        </section>
+
+        <!-- POPULAR -->
+<section class="popular section" id="popular">
+    <div class="container">
+        <span class="section__subtitle">Pilihan Terbaik</span>
+        <h2 class="section__title">
+            Hunian Populer<span>.</span>
+        </h2>
+    </div>
+    <div class="popular__container swiper">
+        <div class="swiper-wrapper">
+            <article class="popular__card swiper-slide">
+                <img src="img/popular1.jpg" alt="" class="popular__img">
+
+                <div class="popular__data">
+                    <h2 class="popular__price">
+                        <span>$</span>66,356
+                    </h2>
+                    <h3 class="popular__title">
+                        Garden City Assat
+                    </h3>
+                    <p class="popular__description">
+                        Jalan Garden City Of Miraflores,
+                        Lima - Perú Av. Sol #9876
+                    </p>
+                </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+                <img src="img/popular2.jpg" alt="" class="popular__img">
+
+                <div class="popular__data">
+                    <h2 class="popular__price">
+                        <span>$</span>35,159
+                    </h2>
+                    <h3 class="popular__title">
+                        Gables Luxurious House
+                    </h3>
+                    <p class="popular__description">
+                        Jalan Garden City Of Miraflores,
+                        Lima - Perú Av. Sol #9876
+                    </p>
+                </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+                <img src="img/popular3.jpg" alt="" class="popular__img">
+
+                <div class="popular__data">
+                    <h2 class="popular__price">
+                        <span>$</span>75,043
+                    </h2>
+                    <h3 class="popular__title">
+                        Garden Orchard City
+                    </h3>
+                    <p class="popular__description">
+                        Jalan Garden City Of Miraflores,
+                        Lima - Perú Av. Sol #9876
+                    </p>
+                </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+                <img src="img/popular4.jpg" alt="" class="popular__img">
+
+                <div class="popular__data">
+                    <h2 class="popular__price">
+                        <span>$</span>62,024
+                    </h2>
+                    <h3 class="popular__title">
+                        Luxurious City Garden
+                    </h3>
+                    <p class="popular__description">
+                        Jalan Garden City Of Miraflores,
+                        Lima - Perú Av. Sol #9876
+                    </p>
+                </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+                <img src="img/popular5.jpg" alt="" class="popular__img">
+
+                <div class="popular__data">
+                    <h2 class="popular__price">
+                        <span>$</span>47,043
+                    </h2>
+                    <h3 class="popular__title">
+                        Aliva Private Garden
+                    </h3>
+                    <p class="popular__description">
+                        Jalan Garden City Of Miraflores,
+                        Lima - Perú Av. Sol #9876
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="swiper-button-next">
+            <i class='bx bx-chevron-right'></i>
+        </div>
+        <div class="swiper-button-prev">
+            <i class='bx bx-chevron-left'></i>
+        </div>
+    </div>
+</section>
+
+<!-- VALUE -->
+<section class="value section" id="value">
+    <div class="value__container container grid">
+        <div class="value__images">
+            <div class="value__orbe"></div>
+
+            <div class="value__img">
+                <img src="img/value.jpg" alt="">
+            </div>
+        </div>
+        <div class="value__content">
+            <div class="value__data">
+                <span class="section__subtitle">Nilai Kami</span>
+                <h2 class="section__title">
+                    Nilai yang Kami Berikan kepada Anda<span>.</span>
+                </h2>
+                <p class="value__description">
+                    Kami selalu siap membantu dengan menyediakan layanan terbaik untuk Anda.
+                    Kami percaya tempat tinggal yang baik dapat membuat hidup Anda lebih baik.
+                </p>
+            </div>
+            <div class="value__accordion">
+                <div class="value__accordion-item">
+                    <header class="value__accordion-header">
+                        <i class='bx bxs-shield-x value__accordion-icon'></i>
+                        <h3 class="value__accordion-title">
+                            Suku bunga terbaik di pasar
+                        </h3>
+                        <div class="value__accordion-arrow">
+                            <i class='bx bxs-down-arrow'></i>
+                        </div>
+                    </header>
+                    <div class="value__accordion-content">
+                        <p class="value__accordion-description">
+                            Harga yang kami berikan adalah yang terbaik untuk Anda,
+                            kami menjamin tidak ada perubahan harga pada properti Anda karena
+                            berbagai biaya tak terduga yang mungkin muncul.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="value__accordion-item">
+                    <header class="value__accordion-header">
+                        <i class='bx bxs-x-square value__accordion-icon'></i>
+                        <h3 class="value__accordion-title">
+                            Mencegah harga yang tidak stabil
+                        </h3>
+                        <div class="value__accordion-arrow">
+                            <i class='bx bxs-down-arrow'></i>
+                        </div>
+                    </header>
+                    <div class="value__accordion-content">
+                        <p class="value__accordion-description">
+                            Harga yang kami berikan adalah yang terbaik untuk Anda,
+                            kami menjamin tidak ada perubahan harga pada properti Anda karena
+                            berbagai biaya tak terduga yang mungkin muncul.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="value__accordion-item">
+                    <header class="value__accordion-header">
+                        <i class='bx bxs-bar-chart-square value__accordion-icon'></i>
+                        <h3 class="value__accordion-title">
+                            Harga terbaik di pasar
+                        </h3>
+                        <div class="value__accordion-arrow">
+                            <i class='bx bxs-down-arrow'></i>
+                        </div>
+                    </header>
+                    <div class="value__accordion-content">
+                        <p class="value__accordion-description">
+                            Harga yang kami berikan adalah yang terbaik untuk Anda,
+                            kami menjamin tidak ada perubahan harga pada properti Anda karena
+                            berbagai biaya tak terduga yang mungkin muncul.
+                        </p>
+                    </div>
+                </div>
+
+                        <!-- KEAMANAN DATA ANDA -->
+<div class="value__accordion-item">
+    <header class="value__accordion-header">
+        <i class='bx bxs-check-square value__accordion-icon'></i>
+        <h3 class="value__accordion-title">
+            Keamanan Data Anda
+        </h3>
+        <div class="value__accordion-arrow">
+            <i class='bx bxs-down-arrow'></i>
+        </div>
+    </header>
+    <div class="value__accordion-content">
+        <p class="value__accordion-description">
+            Harga yang kami berikan adalah yang terbaik untuk Anda,
+            kami menjamin tidak ada perubahan harga pada properti Anda karena
+            berbagai biaya tak terduga yang mungkin muncul.
+        </p>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- KONTAK -->
+<section class="contact section" id="contact">
+    <div class="contact__container container grid">
+        <div class="contact__images">
+            <div class="contact__orbe"></div>
+
+            <div class="contact__img">
+                <img src="img/contact.png" alt="">
+            </div>
+        </div>
+        <div class="contact__content">
+            <div class="contact__data">
+                <span class="section__subtitle">Hubungi Kami</span>
+                <h2 class="section__title">
+                    Mudah Menghubungi Kami<span>.</span>
+                </h2>
+                <p class="contact__description">
+                    Apakah ada masalah dalam menemukan rumah impian Anda? Membutuhkan
+                    panduan dalam membeli rumah pertama? atau perlu konsultasi
+                    tentang masalah perumahan? hubungi kami saja.
+                </p>
+            </div>
+
+            <div class="contact__card">
+                <div class="contact__card-box">
+                    <div class="contact__card-info">
+                        <i class='bx bxs-phone-call'></i>
+
+                        <div>
+                            <h3 class="contact__card-title">
+                                Hubungi
+                            </h3>
+                            <p class="contact__card-description">
+                                022.321.165.19
+                            </p>
+                        </div>
+                    </div>
+                    <button class="button contact__card-button">
+                        Hubungi Sekarang
+                    </button>
+                </div>
+
+                <div class="contact__card-box">
+                    <div class="contact__card-info">
+                        <i class='bx bxs-message-rounded-dots'></i>
+
+                        <div>
+                            <h3 class="contact__card-title">
+                                Obrolan
+                            </h3>
+                            <p class="contact__card-description">
+                                022.321.165.19
+                            </p>
+                        </div>
+                    </div>
+                    <button class="button contact__card-button">
+                        Obrolan Sekarang
+                    </button>
+                </div>
+
+                <div class="contact__card-box">
+                    <div class="contact__card-info">
+                        <i class='bx bxs-video'></i>
+
+                        <div>
+                            <h3 class="contact__card-title">
+                                Panggilan Video
+                            </h3>
+                            <p class="contact__card-description">
+                                022.321.165.19
+                            </p>
+                        </div>
+                    </div>
+                    <button class="button contact__card-button">
+                        Panggilan Video Sekarang
+                    </button>
+                </div>
+
+                <div class="contact__card-box">
+                    <div class="contact__card-info">
+                        <i class='bx bxs-envelope'></i>
+
+                        <div>
+                            <h3 class="contact__card-title">
+                                Pesan
+                            </h3>
+                            <p class="contact__card-description">
+                                022.321.165.19
+                            </p>
+                        </div>
+                    </div>
+                    <button class="button contact__card-button">
+                        Kirim Pesan Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BERLANGGANAN -->
+<section class="subscribe section" id="subscribe">
+    <div class="subscribe__container container">
+        <h1 class="subscribe__title">
+            Memulai dengan HarvesHouse
+        </h1>
+        <p class="subscribe__description">
+            Berlangganan dan dapatkan penawaran harga yang sangat menarik
+            dari kami, Temukan tempat tinggal Anda segera.
+        </p>
+        <a href="#" class="button subscribe__button">
+            Memulai
+        </a>
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+    <div class="footer__container container grid">
+        <div>
+            <a href="#" class="footer__logo">
+                HarvesHouse <i class='bx bxs-home-alt-2'></i>
+            </a>
+            <p class="footer__description">
+                Visi kami adalah membuat semua orang <br>
+                tempat terbaik untuk tinggal bagi mereka.
+            </p>
+        </div>
+
+        <div class="footer__content">
+            <div>
+                <h3 class="footer__title">
+                    Tentang
+                </h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Tentang Kami</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Fitur</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Berita & Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer__title">
+                    Perusahaan
+                </h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Bagaimana Kami Bekerja?</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Modal</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Keamanan</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer__title">
+                    Dukungan
+                </h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Pusat Dukungan</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Hubungi Kami</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer__title">
+                    Ikuti Kami
+                </h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook-circle'></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </a>
+                    <a href="https://www.pinterest.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-pinterest'></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__info container">
+        <span class="footer__copy">
+            &#169; Bedimcode. Seluruh hak cipta dilindungi
+        </span>
+        <div class="footer__privacy">
+            <a href="#">Syarat & Perjanjian</a>
+            <a href="#">Kebijakan Privasi</a>
+        </div>
+    </div>
+
+</footer>
+
+<!-- SCROLL UP -->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class='bx bx-chevrons-up'></i>
+</a>
+
+<!-- SCROLLREVEL -->
+<script src="js/scrollreveal.min.js"></script>
+<!-- SWIPER JS -->
+<script src="JS/swiper-bundle.min.js"></script>
+<!-- JS -->
+<script src="main.js"></script>
+</body>
+</html>
